@@ -4,6 +4,13 @@ class Scloud < Formula
   version "1.15.1"
   bottle :unneeded
 
+  def caveats; <<~EOS
+      "Run `scloud init` on initial installation, and use `scloud config get` to get the 
+       current configuration, more information is available here: 
+       https://sajari.atlassian.net/wiki/x/dYD3D"
+    EOS
+  end
+
   if OS.mac? && Hardware::CPU.intel?
     url "https://cdn.sajari.com/v2/scloud/scloud-0.15.1.darwin-amd64.tar.gz"
     sha256 "081d0a76ed734f537a5d6840dfae950c2878ed8e44f90bd28ea7dd567f4c208b"
