@@ -11,13 +11,18 @@ class Scloud < Formula
     EOS
   end
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://cdn.sajari.com/v2/scloud/0.16.0/scloud-0.16.0.darwin-amd64.tar.gz"
-    sha256 "081d0a76ed734f537a5d6840dfae950c2878ed8e44f90bd28ea7dd567f4c208b"
-  end
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://cdn.sajari.com/v2/scloud/0.16.0/scloud-0.16.0.darwin-arm64.tar.gz"
-    sha256 "78a4b60a360565a767b0e971844a22339d6184d354e2570b38de6cf413e32b9d"
+  if OS.mac?
+    if Hardware::CPU.intel?
+      url "https://cdn.sajari.com/v2/scloud/0.16.0/scloud-0.16.0.darwin-amd64.tar.gz"
+      sha256 "b5233224a63b87e0f3facb9084a6fe8ee09bf16654ff3b02cbdfe02a59a05c34"
+    end
+    if Hardware::CPU.arm?
+      url "https://cdn.sajari.com/v2/scloud/0.16.0/scloud-0.16.0.darwin-arm64.tar.gz"
+      sha256 "b539e97322e8a1049cd3dcfdee98374b28c6a30fb9a1fcfcc5376dbeaef36e89"
+    end
+  elsif OS.linux? && Hardware::CPU.intel?
+    url "https://cdn.sajari.com/v2/scloud/0.16.0/scloud-0.16.0.linux-amd64.tar.gz"
+    sha256 "8d068662ef1dc5eddfe2c759fefa8b5a5bfda2fe447eb410ba88c802add93f7b"
   end
 
   def install
