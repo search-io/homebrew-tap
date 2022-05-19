@@ -1,6 +1,6 @@
-# Sajari Homebrew Tap
+# Search.io Homebrew Tap
 
-Homebrew [tap](https://docs.brew.sh/Taps) containing formulae for Sajari tools.
+Homebrew [tap](https://docs.brew.sh/Taps) containing formulae for Search.io tools.
 
 ## Usage
 
