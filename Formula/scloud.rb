@@ -30,6 +30,6 @@ class Scloud < Formula
   end
 
   test do
-    system "#{bin}/scloud", "--version"
+    system "#{bin}/scloud"
   end
 end
