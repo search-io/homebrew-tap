@@ -5,5 +5,5 @@ Homebrew [tap](https://docs.brew.sh/Taps) containing formulae for Search.io tool
 ## Usage
 
 ```
-brew tap sajari/tap git@github.com:sajari/homebrew-tap.git
+brew tap search-io/tap git@github.com:search-io/homebrew-tap.git
 ```
