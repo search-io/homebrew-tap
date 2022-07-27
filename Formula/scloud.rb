@@ -1,13 +1,13 @@
 class Scloud < Formula
-  desc "The scloud command can be used to set up and test a Sajari collection. You can do almost everything with this command-line tool."
-  homepage "https://sajari.atlassian.net/wiki/x/dYD3D"
-  version "1.15.1"
+  desc "The scloud command can be used to setup, test and work with a Search.io collection. You can do almost everything with this command-line tool."
+  homepage "https://search-io.atlassian.net/wiki/x/dYD3D"
+  version "1.16.0"
   bottle :unneeded
 
   def caveats; <<~EOS
       "Run `scloud init` on initial installation, and use `scloud config get` to get the 
        current configuration, more information is available here: 
-       https://sajari.atlassian.net/wiki/x/dYD3D"
+       https://search-io.atlassian.net/wiki/x/dYD3D"
     EOS
   end
 
